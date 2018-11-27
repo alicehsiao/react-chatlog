@@ -8,7 +8,8 @@ const ChatLog = (props) => {
     return <ChatEntry key={i}
     name={entry.sender}
     message={entry.body}
-    timeStamp={entry.timeStamp}/>
+    timeStamp={entry.timeStamp}
+    senderOne={props.senderOne}/>
   });
 
   return (

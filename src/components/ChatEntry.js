@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const ChatEntry = (props) => {
   return (
-    <div className="chat-entry local">
+    <div className={"chat-entry " + (props.name === props.senderOne ? "local":"remote")}>
       <p className="entry-name">{props.name}</p>
       <ChatBubble messageBody={props.message} timeStamp={props.timeStamp}/>
     </div>
